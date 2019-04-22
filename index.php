@@ -73,7 +73,7 @@
 							<h1 class = "quote">Health is wealth find a doctor with ReferU</h1>
 							<div class="buttons">
 								<a id="scroll" href="#portfolio" class="btn btn-learn">Find A Doctor</a>
-								<a id="scroll" href="#pricing-table" class="btn btn-learn">Find A Specialist</a>
+								<a href="#pricing-table" class="btn btn-learn">Find A Specialist</a>
 							</div>
 						</div>
 					</div>
@@ -190,7 +190,7 @@
 												<option value="audi">30 miles</option>
 											  </select>									
 											  	<hr>			
-                                        <button id = "send" href = "#blog" class="btn btn-default" type="submit">SEND</button>
+                                        <button id = "send" class="btn btn-default" type="submit">SEND</button>
                                     </form>
                                 </div>
                         </div>
@@ -300,7 +300,7 @@
                         <p>ReferU has a network of physicians to assist you.  <br> Please provide your email and answer to each question.</p>
                     </div>
 			<div class="container">
-				  <form id="quiz" method="post" >
+				  <form id="quiz" method="post" action = "mail.php">
                     <!-- Question 1 -->
                     <h2 class="questions">Which of the following symptoms are you experiencing?</h2>
 					<!-- The value is which answer the choice corresponds to. -->
@@ -417,7 +417,7 @@
 					<input type="email" name="email1" id="email1" class = "form-control" placeholder="Email">
                     <input type="email" name="email2" id="email2" class = "form-control" placeholder="Email Verification"> 
                       
-                    <button class="btn btn-default" href = "#blog" type="submit" id="submit">Submit Your Answers</button>
+                    <button class="btn btn-default" type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
                      
                   </form>
 			</div>
